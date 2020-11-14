@@ -1,17 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div id="app" ref="container"></div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import * as THREE from "three";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  mounted() {},
+  data() {
+    return {
+      scene: null,
+      camera: null
+    }
+  },
+  methods: {
+    initScene() {
+      // to do someting
+    }
   }
 }
 </script>
