@@ -1,23 +1,15 @@
 <template>
-  <div id="app" ref="container"></div>
+  <div id="app">
+    <demo />
+  </div>
 </template>
 
 <script>
-import * as THREE from "three";
-
+import Demo01 from "./components/Demo01";
 export default {
   name: 'App',
-  mounted() {},
-  data() {
-    return {
-      scene: null,
-      camera: null
-    }
-  },
-  methods: {
-    initScene() {
-      // to do someting
-    }
+  components: {
+    'Demo': Demo01
   }
 }
 </script>
